@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 # https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html : 数据集太小的方法
 
-# Using the bottleneck features of a pre-trained networks xception and inception + nn
-# Method: 1. train the classification model based on ensemble of xception and inception
-#         2. use all the training data
+# Using the bottleneck features of a pre-trained network Xception
+# Method:   1. ensemble features of xception and inception + lr (Kaggle rank: 494 score:0.3039)
+#           2. ensemble predicted probs of xception and inception + lr(Kaggle rank: 465 score:0.286)
+#        => 3. ensemble features of xception and inception + nn (score:0.3037)
 # score: 0.4 have to adjust the parameters: https://www.zhihu.com/question/41631631
 
 import pandas as pd
